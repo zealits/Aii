@@ -1,0 +1,67 @@
+/* Preloader Style */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #000000, #1a1a1a, #333333, #4a4a4a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.5s ease-in-out, visibility 0s ease-in-out; /* No delay in visibility change */
+  }
+  
+  /* Logo */
+  .logo {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    animation: fadeInOut 2s infinite;
+    transition: width 2.5s ease-in-out, height 2.5s ease-in-out;
+  }
+  
+  .loaded .logo {
+    animation: moveToTopLeft 2.5s ease-in-out forwards;
+    width: 60px;
+    height: 60px;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.4;
+    }
+  }
+  
+  @keyframes moveToTopLeft {
+    0% {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      top: 20px;
+      left: 20px;
+      transform: translate(0, 0);
+    }
+  }
+  
+  /* Main Content */
+  .main-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Faster fade-in transition */
+  }
+  
+  .main-content.visible {
+    display: block;
+    opacity: 1;
+  }
+  
