@@ -21,7 +21,7 @@ const ContactSection = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:4020/send-email", {
+      const response = await fetch("http://154.53.42.27:4020/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
