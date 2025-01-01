@@ -45,7 +45,7 @@ const Header = () => {
           >
             <img width="60px" src={Logo} alt="Logo" />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-white group-hover:from-white group-hover:to-blue-200 transition duration-300 px-4">
-              Ventures
+              Venture
             </span>
           </a>
 

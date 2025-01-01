@@ -21,7 +21,7 @@ const AboutSection = () => {
           </div> */}
 
           <h2 className="text-4xl md:text-6xl font-extrabold text-black mb-6 tracking-tight drop-shadow-sm">
-    About Aii Ventures
+    About Aii Venture
 </h2>
 
         </div>
