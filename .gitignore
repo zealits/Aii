@@ -1,4 +1,4 @@
 Aii/dist/
 node_modules/
 Aii/node_modules
-# config/config.env
+config/config.env
