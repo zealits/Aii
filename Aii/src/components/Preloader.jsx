@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import Header from './Header';
-import HeroSection from './HeroSection';
-import AboutSection from './AboutSection';
-import ServicesSection from './ServicesSection';
-import SolutionsSection from './SolutionsSection';
-import ContactSection from './ContactSection';
-import Footer from './Footer';
-import './Preloader.css'; // Assuming you have a separate CSS file for styles
-import Logo from "../assets/logo/logo.png"
+import React, { useState, useEffect } from "react";
+import Header from "./Header";
+import HeroSection from "./HeroSection";
+import AboutSection from "./AboutSection";
+import ServicesSection from "./ServicesSection";
+import SolutionsSection from "./SolutionsSection";
+import ContactSection from "./ContactSection";
+import Footer from "./Footer";
+import "./Preloader.css"; // Assuming you have a separate CSS file for styles
+import Logo from "../assets/logo/logo.png";
 
 const Preloader = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -25,7 +25,7 @@ const Preloader = () => {
 
       // Hide preloader completely after animation finishes
       setTimeout(() => {
-        document.querySelector('.preloader').style.visibility = 'hidden';
+        document.querySelector(".preloader").style.visibility = "hidden";
       }, 2500); // Hide after the logo animation completes
 
       return () => clearTimeout(moveToTopLeftTimeout);
@@ -37,12 +37,12 @@ const Preloader = () => {
   return (
     <div>
       {/* Preloader */}
-      <div className={`preloader ${isLoaded ? 'loaded' : ''}`}>
+      <div className={`preloader ${isLoaded ? "loaded" : ""}`}>
         <img className="logo" src={Logo} alt="Website Logo" id="logo" />
       </div>
 
       {/* Main Content */}
-      {/* <div className={`main-content ${isVisible ? 'visible' : ''}`}>
+      <div className={`main-content ${isVisible ? "visible" : ""}`}>
         <Header />
         <HeroSection />
         <AboutSection />
@@ -50,7 +50,7 @@ const Preloader = () => {
         <SolutionsSection />
         <ContactSection />
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 };

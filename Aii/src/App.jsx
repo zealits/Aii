@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    < Preloader />
+    <Preloader />
     </>
   )
 }
