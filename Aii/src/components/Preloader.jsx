@@ -42,7 +42,7 @@ const Preloader = () => {
       </div>
 
       {/* Main Content */}
-      <div className={`main-content ${isVisible ? 'visible' : ''}`}>
+      {/* <div className={`main-content ${isVisible ? 'visible' : ''}`}>
         <Header />
         <HeroSection />
         <AboutSection />
@@ -50,7 +50,7 @@ const Preloader = () => {
         <SolutionsSection />
         <ContactSection />
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 };

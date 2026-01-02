@@ -11,7 +11,7 @@ const Footer = () => {
             <a href="#" className="hover:text-gray-300 transition">Privacy Policy</a>
             <a href="#" className="hover:text-gray-300 transition">Terms of Service</a>
           </div>
-          <p className="mt-8">&copy; 2024 Aii Venture. All rights reserved.</p>
+          <p className="mt-8">&copy; 2026 Aii Venture. All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -19,3 +19,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
+
